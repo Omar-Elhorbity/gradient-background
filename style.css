@@ -48,7 +48,7 @@ h3 {
     transform: translateY(-2px);
   }
 
-  #opacity {
+  /* #opacity {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -81,4 +81,4 @@ h3 {
     cursor: pointer;
     -webkit-transition: .2s;
     transition: background .2s;
-  }
+  } */
