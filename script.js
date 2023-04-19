@@ -12,3 +12,21 @@ color1.addEventListener("input", colorPicker)
 
 color2.addEventListener("input", colorPicker)
 
+var randomButton = document.getElementById("randomButton");
+
+randomButton.addEventListener("click", function() {
+  var randomColor1 = getRandomColor();
+  var randomColor2 = getRandomColor();
+  color1.value = randomColor1;
+  color2.value = randomColor2;
+  colorPicker();
+});
+
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
