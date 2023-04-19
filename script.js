@@ -11,9 +11,9 @@ function colorPicker(){
 	css.textContent = body.style.background + "."; 
 }
 
-color1.addEventListener("input", colorPicker)
-
-color2.addEventListener("input", colorPicker)
+color1.addEventListener("input", colorPicker);
+color2.addEventListener("input", colorPicker);
+opacity.addEventListener("input", colorPicker);
 
 var randomButton = document.getElementById("randomButton");
 
