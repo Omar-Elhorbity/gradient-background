@@ -2,9 +2,12 @@ var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
+var opacity = document.getElementById("opacity");
 
 function colorPicker(){
+	var opacityValue = opacity.value;
 	body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+	body.style.opacity = opacityValue;
 	css.textContent = body.style.background + "."; 
 }
 
